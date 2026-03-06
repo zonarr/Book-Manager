@@ -1,1 +1,1 @@
-#Using fast api + mysqllite for book db
+#Using fast api + mysqllite for book db. Uses UV for package management
