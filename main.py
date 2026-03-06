@@ -1,6 +1,11 @@
-def main():
-    print("Hello from book-manager!")
+from fastapi import FastAPI
 
 
-if __name__ == "__main__":
-    main()
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"message":"Hello World"}
+
+
