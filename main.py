@@ -4,9 +4,9 @@ from markupsafe import escape
 
 app = Flask(__name__)
 
-@app.route("/",methods=['GET'])
+@app.route("/")
 def root():
-    return "<p>Hello World</p>"
+    return render_template('index.html',user="Guest")
 
 @app.route("/<name>")
 def return_name(name):

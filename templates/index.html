@@ -1,21 +1,22 @@
 <!--This is the home page of the Book Manager website-->
 <!--variables:user,-->
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <title>Book Manager Home Page</title>
         <meta name="author" content="Sunn">
         <meta name="description" content="A book managing app/website written HTML,CSS,JS,SQL and Python and using Flask and sqlite for api">
-        
+        <link rel="icon" href="{{url_for('static',filename='images/favicon_io/favicon.ico')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
     </head>
     <body>
         <h1>Book Manager</h1>
         <h2>Hello {{user}}</h2>
         <p>This website helps manages <strong>books</strong></p>
-        <img src="../static/images/books-on-shelves-in-bookstore.webp" alt="Picture of book on shelves in bookstore">
+        <img src="{{url_for('static',filename='images/book_shelf.webp')}}" alt="Picture of book on shelves in bookstore">
         <br>
-        <a href="isnert_book.html">Insert new book</a>
+        <a href="insert_book.html">Insert new book</a>
         <br>
         <a href="delete_book.html">Delete book</a>
     </body>
